@@ -50,6 +50,9 @@
         {% include '_includes/feeds.html' %}
         {% endblock feed_links %}
         {% include '_includes/analytics.html' %}
+		{% if EXTRA_HEAD_DATA %}
+		{{ EXTRA_HEAD_DATA }}
+		{% endif %}
     </head>
     <body>
         <div id="content">
